@@ -1,0 +1,12 @@
+{
+  "name": "cuilb_sort_array",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "'bingyu~' <'1459574275@qq.com'>",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,72 @@
+#! /usr/bin/env node
+
+let program = require("commander");
+let inquirer = require("inquirer");
+
+
+let _ = require("lodash");
+
+program
+    .command("module")
+    .alias("m")
+    .action((option) => {
+        //argv 数组  [node目录, root]
+        // console.log(process);
+
+
+        let prompts = [];
+
+        //模块的名字
+        //选择  sass  less
+
+        let config = _.assign({
+            moduleName: null,
+            description: '',
+            sass: false,
+            less: false
+        }, option);
+
+        if (!config.moduleName) {
+            prompts.push({
+                type: "input",
+                name:"moduleName",
+                message: "请输入模块名字:",
+                validate:function (input) {
+                    if (!input) {
+                        return '不能为空';
+                    }
+
+                    return true;
+                }
+            })
+        }
+        if (!config.sass && !config.less) {
+
+            prompts.push({
+                type:"list",
+                name: "cssPretreatment",
+                message: "想要什么处理CSS样式?",
+                choices:[
+                    {
+                        name:"Sass/Compont",
+                        value: "sass"
+                    },
+                    {
+                        name:"Less/Compont",
+                        value: "less"
+                    }
+                ]
+
+            })
+        }
+
+        inquirer.prompt(prompts).then((as)=>{
+            console.log(as);
+        });
+
+
+    });
+
+/*process.argv   Node 进程:  线程: */
+program.parse(process.argv);
+

@@ -1,0 +1,43 @@
+#! /usr/bin/env node
+
+//commander 编写cli 主要的包
+let program = require("commander");
+
+
+//express -e
+
+//program.name()
+//program.option("-e","")
+
+/*链式调用*/
+
+program
+    .command("module")
+    .alias("m")
+    .description("加载模块")
+    .option("-a,--name [moduleName]", "模块名字")
+    .action((option) => {
+        /*模块的配置信息*/
+        console.log(process.argv);
+        console.log("HelloWorld");
+
+        /*
+        *
+        * */
+    });
+//解析模块的参数 process:进程 argv:参数
+program.parse(process.argv);
+
+
+
+/*
+* xxx -e  模块名字
+*
+* cuilb m :添加到环境变量中  npm i express-generator -g
+*
+* bin:{
+*   "cuilb":"app"
+* }
+* npm link : 配置添加到环境变量
+*
+* */

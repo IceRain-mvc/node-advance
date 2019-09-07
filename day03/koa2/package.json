@@ -1,0 +1,15 @@
+{
+  "name": "cuilb_koa2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "'cuilibao' <'cuilibao123@gamil.com'>",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.8.1"
+  }
+}
