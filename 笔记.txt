@@ -451,11 +451,89 @@ koa
     4:请求 接口 返回数据
 
 
+koa: 服务 + 接口 + 返回数据
+
+     context
+        请求 响应
+     application
+        中间件
+        context
+        app.use()
+
+     mysql
+
+day09:
 
 egg
 
+    1:
+
+    express
+    koa
+
+    java:
+
+    egg:
 
 
+
+      MVC 架构模式
+
+      Model : 数据
+      View  : 视图
+      Controller: 控制
+
+      分层 : 约定
+
+
+      MVP  : 移动端  android
+
+      MVVM : vue
+
+    egg和koa什么关系
+      koa  express
+      阿里 基于koa
+
+      约定 : 扩展性
+
+    npm install egg-init -g
+
+    egg-init demo
+
+
+egg  koa
+
+   1: 约定  MVC  koa
+   2: egg-mysql
+   3: koa : require  module.exports CommonJs  AMD CMD
+   4: egg : import  export es6语法
+
+   方法一:
+   npm init egg --type=simple
+
+   npm i
+
+   方式二:
+   npm i egg-init -g
+
+   egg-init demo --type=simple
+
+ 如何使用
+
+
+   C : controller 控制 的是 M: V:View
+
+    service : 数据
+    连接数据 mysql
+
+    视图层 : Rwact
+    Controller
+    Service
+
+
+1:router  : 路由
+2:controller : 控制
+3:service : 数据
 
 
 
