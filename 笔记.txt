@@ -526,8 +526,8 @@ egg  koa
     service : 数据
     连接数据 mysql
 
-    视图层 : Rwact
-    Controller
+    视图层 : React
+    y
     Service
 
 
@@ -537,6 +537,14 @@ egg  koa
 
 
 
+day10:
+    上午
+    1:下载  egg-mysql
+    2:配置 plugin
+    3:config.default.js  mysql
+    4:连接mysql  数据库 表
+      controller : 接收请求  返回给web
+      service : 数据
 
 
 
