@@ -16,6 +16,22 @@ class BlogController extends Controller {
             code: 1
         }
     }
+    async getDetail() {
+        let {ctx, service} = this;
+
+        let blogId = ctx.query.blogId;
+
+
+        /*service 方法*/
+        let result = await service.blog.getDetail(blogId);
+
+        // ctx.status = 200;
+
+        ctx.body = {
+            ...{result},
+            code: 1
+        }
+    }
 }
 
 module.exports = BlogController;

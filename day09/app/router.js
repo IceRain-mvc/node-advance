@@ -4,6 +4,7 @@ module.exports = app => {
     router.get('/', controller.home.index);
     router.post('/registry', controller.user.registry);  //csrf
     router.get('/getBlogList', controller.blog.getList);  //csrf
+    router.get('/blogDetail', controller.blog.getDetail);  //csrf
 };
 
 
